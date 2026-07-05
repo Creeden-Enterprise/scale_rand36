@@ -1,0 +1,36 @@
+# Raw licensed source documents + archives must never enter git history.
+# The structured JSON extraction under data/ is the product; the raw source
+# (textbook PDF/EPUB/DOCX, scanned pages, spreadsheets, etc.) stays out.
+# Enforced at PR time by .github/workflows/data-validate.yml (Phase 2c).
+*.pdf
+*.epub
+*.mobi
+*.azw
+*.azw3
+*.kfx
+*.doc
+*.docx
+*.rtf
+*.odt
+*.xls
+*.xlsx
+*.ods
+*.ppt
+*.pptx
+*.odp
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.tgz
+*.bz2
+*.db
+*.sqlite
+*.sqlite3
+
+# Build / tooling junk
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store

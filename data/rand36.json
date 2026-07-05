@@ -1,0 +1,14 @@
+{
+  "id": "rand36",
+  "label": "RAND-36",
+  "fullName": "RAND 36-Item Health Survey 1.0",
+  "abbr": "RAND-36",
+  "domain": "Quality of Life — General",
+  "citation": "Hays RD, Sherbourne CD, Mazel RM. (1993). The RAND 36-Item Health Survey 1.0. Health Econ. 2(3):217–227. https://doi.org/10.1002/hec.4730020305",
+  "url": "https://www.rand.org/health-care/surveys_tools/mos/36-item-short-form.html",
+  "license": "Free with a required credit line acknowledging development at RAND as part of the Medical Outcomes Study. RAND grant: \"No further written permission is needed for use of this Health Survey.\"",
+  "description": "A 36-item patient-reported survey measuring 8 health domains; the freely-licensed sibling of the SF-36 (identical items, RAND scoring). SCAFFOLD: the item set is not yet ingested — no content claim until it lands.",
+  "scoring": "Scores 0–100 per subscale; higher = better health. RAND scoring differs from the licensed SF-36 scoring.",
+  "items": null,
+  "tier": "attrib"
+}

@@ -1,0 +1,25 @@
+# Workflow-migration Phase 2c (issue #1198): generic-but-real data validator +
+# licensed-content guardrail for the creeden-*-db clinical reference databases.
+# Deployed identically to every armed repo at .github/workflows/data-validate.yml.
+# The required-status-check context for this job is "data-validate" — but the
+# Phase-2c ruleset is armed ONLY after this context is confirmed reporting green
+# on a real witness PR (the never-reported-deadlock gate).
+name: data-validate
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+permissions:
+  contents: read
+
+jobs:
+  data-validate:
+    name: data-validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - name: Validate data + licensed-content guardrail
+        run: python3 .github/scripts/validate.py
